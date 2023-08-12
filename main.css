@@ -100,3 +100,9 @@ nav,
 section {
     display: block;
 }
+
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+  } 
