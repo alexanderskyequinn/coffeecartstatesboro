@@ -5,11 +5,16 @@ html {
 }
 
 .bg {
-  background-image: url("/items/menubg.png");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  background-image: url("/items/menubg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 0;
 }
 
 .menu-item {
@@ -38,6 +43,7 @@ html {
   animation-duration: 10s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  z-index: 1;
 }
 
 @keyframes roll {
@@ -55,6 +61,46 @@ html {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.image-container img {
+  position: absolute;
+  top: 1%;
+  left: 55.5%;
+  width: 55%;
+  height: 50%;
+  max-width: 75%;
+  max-height: 75%;
+  object-fit: contain;
+  opacity: 0;
+  animation: fade 18s ease-in-out infinite;
+  z-index: 2;
+}
+
+.image-container img:first-child {
+  opacity: 1;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
