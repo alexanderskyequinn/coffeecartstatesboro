@@ -3,72 +3,15 @@
 <head>
     <title>Almond Joy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body, html {
-          height: 100%;
-          margin: 0;
-        }
-        
-        .bg {
-          background-image: url("/items/menubg.png");
-          height: 100%; 
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-
-        .menu-item {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: url("/items/menuitem.png");
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
-
-        .almondjoy {
-        position: fixed;
-        top: 53%;
-        left: 33%;
-        width: 35%;
-        height: 35%;
-        background-image: url("/items/almondjoymocha.png");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        animation-name: roll;
-        animation-duration: 10s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        }
-
-      @keyframes roll {
-      0% {
-      transform: rotate(0deg);
-      }
-      25% {
-      transform: rotate(5deg);
-      }
-      50% {
-      transform: rotate(0deg);
-      }
-      75% {
-      transform: rotate(-5deg);
-      }
-      100% {
-      transform: rotate(0deg);
-      }
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/styles/almondjoym.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <div class="bg"></div>
     <div class="menu-item"></div>
     <div class="almondjoy"></div>
+    <button class="back-button" onclick="window.location.href='/index.html'"></button>
 </body>
 
 </html>
