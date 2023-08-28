@@ -1,9 +1,8 @@
 body {
-    background-image: url("/items/chalkboard.jpg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("/items/menubg.png");
     background-repeat: no-repeat;
-  }
+    background-size: cover;
+}
 
   .container {
       display: flex;
@@ -12,39 +11,84 @@ body {
       height: 100vh;
   }
 
-  .box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 300px;
-      height: 300px;
-      border: 2px solid white;
-      margin: 0 20px;
-  }
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    margin: 0 20px;
+    background-color: darkslategray;
+}
 
-  .box img {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 20px;
-  }
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+}
 
-  .box a {
-      text-decoration: none;
-  }
+.box a {
+    text-decoration: none;
+}
 
-  .box button {
-      background-color: transparent;
-      color: white;
-      border: 2px solid white;
-      padding: 10px 20px;
-      margin-top: 20px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.5s, color 0.5s;
-  }
+.box button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(59, 49, 49);
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
 
-  .box button:hover {
-      background-color: white;
-      color: black;
-  }
+.box button:hover {
+    background-color: white;
+    color: black;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 48px;
+    color: #ff6a00;
+    text-shadow: 2px 2px #f5deb3;
+    z-index: 1;
+}
+
+.line {
+    border-top: 5px solid #524a3b;
+    margin-top: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.footer button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.footer button:hover {
+    background-color: white;
+    color: black;
+}
