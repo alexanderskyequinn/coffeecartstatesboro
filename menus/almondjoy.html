@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Almond Joy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+        
+        .bg {
+          background-image: url("/items/menubg.png");
+          height: 100%; 
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .menu-item {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url("/items/menuitem.png");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        .almondjoy {
+          position: absolute;
+          top: 75%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 350px;
+          height: 350px;
+          background-image: url("/items/almondjoymocha.png");
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="menu-item"></div>
+    <div class="almondjoy"></div>
+</body>
+
+</html>
