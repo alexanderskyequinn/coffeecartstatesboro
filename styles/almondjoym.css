@@ -1,29 +1,30 @@
-body, html {
-    height: 100%;
-    margin: 0;
-  }
-  
-  .bg {
-    background-image: url("/items/menubg.png");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
 
-  .menu-item {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/items/menuitem.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.bg {
+  background-image: url("/items/menubg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .almondjoy {
+.menu-item {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/items/menuitem.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.almondjoy {
   position: fixed;
   top: 53%;
   left: 33%;
@@ -37,47 +38,47 @@ body, html {
   animation-duration: 10s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  }
+}
 
 @keyframes roll {
-0% {
-transform: rotate(0deg);
-}
-25% {
-transform: rotate(5deg);
-}
-50% {
-transform: rotate(0deg);
-}
-75% {
-transform: rotate(-5deg);
-}
-100% {
-transform: rotate(0deg);
-}
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .back-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 50px;
-    height: 50px;
-    opacity: 0.5;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
-  .back-button:hover {
-    opacity: 1;
-  }
+.back-button:hover {
+  opacity: 1;
+}
 
-  .back-button::before {
-    content: "\2190";
-    font-size: 24px;
-    color: white;
-    line-height: 50px;
-    text-align: center;
-  }
+.back-button::before {
+  content: "\2190";
+  font-size: 24px;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+}
