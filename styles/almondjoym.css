@@ -121,6 +121,7 @@ html {
   border: none;
   outline: none;
   cursor: pointer;
+  z-index: 1;
 }
 
 .back-button:hover {
