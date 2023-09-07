@@ -47,12 +47,14 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
+/* This is the background for the main menu  */
 body {
     background-image: url("/items/menubg.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+ /* This is the container for all of the specials options, this helps keep them centered and keeps them all similar size */
   .container {
       display: flex;
       justify-content: center;
@@ -60,14 +62,15 @@ body {
       height: 100vh;
   }
 
+   /* This is the "boxes" that the main menu items are in, though the box is invisble, its just there for scaling and making sure everything lines up */
     .box {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
     margin: 20px;
     text-align: center;
     opacity: 1;
     transition: opacity 1s;}
 
+/* This is the image that goes inside of the box. pretty self explanatory there...  */
 .box img {
     max-width: 100%;
     max-height: 100%;
@@ -78,6 +81,7 @@ body {
     text-decoration: none;
 }
 
+ /* This is the button inside the box */
 .box button {
     background-color: transparent;
     color: white;
@@ -89,12 +93,14 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
-.box button:hover {
+ /* This is the reason the button changes color when hovered  */
+ .box button:hover {
     background-color: white;
     color: black;
 }
 
-.header {
+ /* This is the text at the top  */
+ .header {
     position: absolute;
     top: 0;
     left: 0;
@@ -108,11 +114,13 @@ body {
     z-index: 1;
 }
 
+ /* This is the line inbetween the text and the container */
 .line {
     border-top: 5px solid #524a3b;
     margin-top: 20px;
 }
 
+ /* You get the gist...  */
 .footer {
     position: absolute;
     bottom: 0;

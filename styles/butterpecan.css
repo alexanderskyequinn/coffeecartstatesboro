@@ -29,13 +29,13 @@ html {
   background-repeat: no-repeat;
 }
 
-.caramel {
+.butterpecan {
   position: fixed;
   top: 53%;
   left: 33%;
   width: 35%;
   height: 35%;
-  background-image: url("/items/caramel.png");
+  background-image: url("/items/butterpecan.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

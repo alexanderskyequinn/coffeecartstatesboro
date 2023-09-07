@@ -4,6 +4,7 @@ html {
   margin: 0;
 }
 
+ /* This is the background for the  */
 .bg {
   position: fixed;
   top: 0;
@@ -17,6 +18,7 @@ html {
   z-index: 0;
 }
 
+ /* This adds the Coffe & Espresso pane, the Frozen drink pane, and the other pane, along with the other stylizations around the menu */
 .menu-item {
   position: fixed;
   top: 0;
@@ -29,6 +31,7 @@ html {
   background-repeat: no-repeat;
 }
 
+ /* This is where the special image is defined for the page */
 .almondjoy {
   position: fixed;
   top: 53%;
@@ -46,6 +49,7 @@ html {
   z-index: 1;
 }
 
+ /* This makes it so the special image rolls around and animates so it doesn't look bad */
 @keyframes roll {
   0% {
     transform: rotate(0deg);
@@ -64,6 +68,7 @@ html {
   }
 }
 
+ /* This is the container for the snacks pane */
 .image-container {
   position: relative;
   width: 100%;
@@ -71,6 +76,7 @@ html {
   z-index: 1;
 }
 
+ /* This defines the animation and position of the snacks pane */
 .image-container img {
   position: absolute;
   top: 14%;
@@ -124,6 +130,7 @@ html {
   z-index: 1;
 }
 
+ /* This is extremely self explanatory */
 .back-button:hover {
   opacity: 1;
 }
