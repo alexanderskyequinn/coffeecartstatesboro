@@ -64,6 +64,41 @@ html {
   }
 }
 
+.hoc {
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  width: 35%;
+  height: 35%;
+  background-image: url("/items/hotorcold.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: roll2;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+
+@keyframes roll2 {
+  0% {
+    transform: rotate(3deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(-7deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
 .image-container {
   position: relative;
   width: 100%;
